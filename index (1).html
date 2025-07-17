@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apexar | Crypto Investment Platform</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- DotLottie Player -->
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module">
+      </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      transition: 0.3s;
+    }
+    .nav-link {
+      position: relative;
+      color: #4B5563;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #2563EB;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #2563EB;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+<!-- ===== Navigation ===== -->
+<header class="fixed top-0 left-0 right-0 z-50 shadow-sm glass-nav">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-yellow-600 tracking-wide">Apexar</h1>
+
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="#home"    class="nav-link">Home</a>
+      <a href="#about"   class="nav-link">About</a>
+      <a href="#plans"   class="nav-link">Plans</a>
+      <a href="#stats"   class="nav-link">Stats</a>
+      <a href="#faq"     class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="hidden md:flex space-x-3">
+      <a href="login.html" class="text-sm font-semibold text-blue-600 hover:underline">Login</a>
+      <a href="register.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-sm font-semibold">Register</a>
+    </div>
+
+    <!-- Burger -->
+    <button id="burger" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden md:hidden flex flex-col space-y-4 px-6 pb-6 text-sm font-medium bg-white/90 shadow">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#plans" class="nav-link">Plans</a>
+    <a href="#stats" class="nav-link">Stats</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <div class="flex space-x-3 pt-2">
+      <a href="login.html" class="text-blue-600 font-semibold hover:underline">Login</a>
+      <a href="register.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-sm font-semibold">Register</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO SECTION (FINAL UPGRADE) ===== -->
+<section id="home" class="relative pt-20 pb-32 bg-white overflow-hidden">
+
+  <!-- 🔹 Background -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1920&q=80"
+         alt="Crypto Background"
+         class="w-full h-full object-cover opacity-10">
+    <div class="absolute inset-0 bg-white bg-opacity-95"></div>
+  </div>
+
+  <!-- 🔹 Main Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+
+    <!-- 🔸 Text Column -->
+    <div class="text-left">
+      <h1 class="text-5xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6" data-aos="fade-down">
+        Invest in the Future with <span class="text-yellow-600">Apexar</span>
+      </h1>
+
+      <p class="text-base md:text-lg text-gray-700 mb-6 max-w-xl" data-aos="fade-up" data-aos-delay="100">
+        An effortless, secure, and trusted crypto investing platform — accessible anytime, anywhere, for everyone.
+      </p>
+
+      <a href="register.html"
+         class="inline-block bg-blue-600 hover:bg-blue-700 transition text-white text-base md:text-lg font-semibold px-8 py-3 rounded-xl shadow-md"
+         data-aos="zoom-in" data-aos-delay="200">
+        Get Started
+      </a>
+
+      <!-- 🔹 Trusted Badges Slider (Centered Icons) -->
+<div class="mt-10 max-w-md" data-aos="fade-up" data-aos-delay="400">
+  <div class="swiper trustSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1: SSL Secured -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <circle cx="12" cy="16" r="1"/>
+            <rect x="3" y="10" width="18" height="12" rx="2"/>
+            <path d="M7 10V7a5 5 0 0 1 10 0v3"/>
+          </svg>
+          <span class="leading-tight">SSL Secured</span>
+        </div>
+      </div>
+
+      <!-- Slide 2: Instant Withdrawals -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5"/>
+            <path d="m16 19 3 3 3-3"/>
+            <path d="M18 12h.01"/>
+            <path d="M19 16v6"/>
+            <path d="M6 12h.01"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+          <span class="leading-tight">Instant Withdrawals</span>
+        </div>
+      </div>
+
+      <!-- Slide 3: KYC Verified -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="m16 11 2 2 4-4"/>
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+          </svg>
+          <span class="leading-tight">KYC Verified</span>
+        </div>
+      </div>
+
+      <!-- Slide 4: Audited Contracts -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/>
+            <path d="M14 2v4a2 2 0 0 0 2 2h4"/>
+            <path d="m9 15 2 2 4-4"/>
+          </svg>
+          <span class="leading-tight">Audited Contracts</span>
+        </div>
+      </div>
+
+      <!-- Slide 5: 5M+ Global Users -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
+          <span class="leading-tight">5M+ Global Users</span>
+        </div>
+      </div>
+
+      <!-- Slide 6: 24/7 Customer Reports -->
+      <div class="swiper-slide flex items-center justify-start gap-3 text-gray-700 text-sm">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/>
+            <path d="M21 16v2a4 4 0 0 1-4 4h-5"/>
+          </svg>
+          <span class="leading-tight">24/7 Customer Reports</span>
+        </div>
+      
+      </div>
+    </div>
+  </div>      
+</div>
+    
+    <!-- 🔸 Animation Column -->
+    <div class="flex justify-center md:justify-end" data-aos="zoom-in" data-aos-delay="400">
+      <dotlottie-player
+        src="https://lottie.host/f96dbae1-5fcb-425f-a3c0-bdaa2bdf6430/Ly2GsZo4Ny.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; max-width: 420px; height: auto;"
+        loop
+        autoplay>
+      </dotlottie-player>
+    </div>
+</section>
+
+<!-- ===== Script for burger toggle ===== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("mobileMenu");
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once: true });</script>
+
+<!-- ===== ABOUT SECTION (Professional, Smoother Flow from Hero) ===== -->
+<section id="about" class="py-24 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center">
+
+    <!-- 🔹 Text Column -->
+    <div data-aos="fade-right" class="text-left">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        Experience Intelligent, Transparent Investing
+      </h2>
+
+      <p class="text-gray-700 text-base sm:text-lg leading-relaxed mb-8">
+        Apexar is a secure and transparent cryptocurrency investment platform tailored for both beginners and experienced investors. 
+        Our cutting-edge technology delivers real-time portfolio tracking, DeFi staking solutions, smart AI investment tools, and risk-managed profit strategies.
+        Whether you’re new to crypto or scaling your investments, Apexar equips you with the clarity and tools to grow confidently.
+      </p>
+
+      <!-- 🔹 CTA Button -->
+      <a href="#plans"
+         class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base font-semibold px-8 py-3 rounded-lg shadow-md transition"
+         data-aos="fade-up" data-aos-delay="100">
+        Explore Plans
+      </a>
+    </div>
+
+    <!-- 🔹 Animation Column -->
+    <div class="flex justify-center md:justify-end" data-aos="zoom-in">
+      <dotlottie-player
+        src="https://lottie.host/4221453c-3bb4-4adb-94f3-64d6f38cbd58/hFHJ4ZFFm5.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; max-width: 440px; height: auto;"
+        loop
+        autoplay
+        aria-label="Bitcoin Investment Animation">
+      </dotlottie-player>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== WHY INVESTORS TRUST APEXAR (Upgraded) ===== -->
+<section id="why" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- 🔹 Section Title -->
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-16 text-left" data-aos="fade-right">
+      Why Investors Choose Us with Confidence
+    </h2>
+
+    <!-- 🔹 Features Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- ✅ Feature Card -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center text-blue-600 mb-5">
+          <!-- Withdrawals Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5"/>
+            <path d="m16 19 3 3 3-3"/>
+            <path d="M18 12h.01"/>
+            <path d="M19 16v6"/>
+            <path d="M6 12h.01"/>
+            <circle cx="12" cy="12" r="2"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">24/7 Withdrawals</h3>
+        <p class="text-gray-600 text-base">
+          Enjoy unrestricted, round-the-clock access to your earnings. No delays, no approvals—your money, on your terms.
+        </p>
+      </div>
+
+      <!-- ✅ Security Card -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center text-red-600 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Military-Grade Security</h3>
+        <p class="text-gray-600 text-base">
+          Apexar implements industry-leading encryption, secure servers, and compliance-grade protection to defend your assets at all times.
+        </p>
+      </div>
+
+      <!-- ✅ Unified Dashboard -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center text-yellow-600 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <rect width="7" height="9" x="3" y="3" rx="1"/>
+            <rect width="7" height="5" x="14" y="3" rx="1"/>
+            <rect width="7" height="9" x="14" y="12" rx="1"/>
+            <rect width="7" height="5" x="3" y="16" rx="1"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Unified Dashboard</h3>
+        <p class="text-gray-600 text-base">
+          Manage all aspects of your investment journey from one place—track earnings, view plans, and stay in full control.
+        </p>
+      </div>
+
+      <!-- ✅ Automated Earnings -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-green-600 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <line x1="12" x2="12" y1="2" y2="22"/>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Automated Earnings</h3>
+        <p class="text-gray-600 text-base">
+          Activate hands-free compounding and earn daily profits using smart tools that scale as you grow.
+        </p>
+      </div>
+
+      <!-- ✅ AI-Powered Intelligence -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center text-purple-600 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
+            <path d="M9 13a4.5 4.5 0 0 0 3-4"/>
+            <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
+            <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
+            <path d="M6 18a4 4 0 0 1-1.967-.516"/>
+            <path d="M12 13h4"/>
+            <path d="M12 18h6a2 2 0 0 1 2 2v1"/>
+            <path d="M12 8h8"/>
+            <path d="M16 8V5a2 2 0 0 1 2-2"/>
+            <circle cx="16" cy="13" r=".5"/>
+            <circle cx="18" cy="3" r=".5"/>
+            <circle cx="20" cy="21" r=".5"/>
+            <circle cx="20" cy="8" r=".5"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">AI-Powered Intelligence</h3>
+        <p class="text-gray-600 text-base">
+          Let advanced machine learning guide your strategy—analyzing trends and optimizing profits 24/7.
+        </p>
+      </div>
+
+      <!-- ✅ Transparent Pricing -->
+      <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center text-indigo-600 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+            <path d="m15 9-6 6"/>
+            <path d="M9 9h.01"/>
+            <path d="M15 15h.01"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Transparent Pricing</h3>
+        <p class="text-gray-600 text-base">
+          No hidden fees, ever. Every charge is disclosed clearly—giving you peace of mind and predictable returns.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Styles (utility) ===== -->
+<style>
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(14px);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-chip {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+    margin-bottom: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .feature-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-desc {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+</style>
+
+<!-- ===== INVESTMENT PLANS (Upgraded for Apexar) ===== -->
+<section id="plans" class="py-24 bg-gradient-to-b from-white via-blue-50 to-white relative">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- 🔹 Section Heading -->
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-16 text-left" data-aos="fade-right">
+      Flexible Plans to Grow Your Wealth
+    </h2>
+
+    <!-- 🔹 Plans Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- 🔸 Starter Plan -->
+      <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-4 py-1 rounded-full uppercase font-semibold tracking-wide shadow-md">
+          Starter
+        </div>
+        <h3 class="text-2xl font-extrabold text-blue-600 mt-6 mb-4 text-center">Starter Plan</h3>
+        <p class="text-gray-600 text-sm mb-6 text-center">
+          Ideal for beginners looking to invest safely in crypto markets.
+        </p>
+        <div class="divide-y divide-blue-100 text-sm text-gray-700 text-left mb-8">
+          <div class="py-2 flex justify-between"><span>Min Deposit</span><strong>$100</strong></div>
+          <div class="py-2 flex justify-between"><span>Max Deposit</span><strong>$1,000</strong></div>
+          <div class="py-2 flex justify-between"><span>Daily ROI</span><strong>30%</strong></div>
+          <div class="py-2 flex justify-between"><span>Duration</span><strong>2 Days</strong></div>
+        </div>
+        <div class="text-center">
+          <a href="register.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- 🔸 Pro Plan -->
+      <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-white text-xs px-4 py-1 rounded-full uppercase font-semibold tracking-wide shadow-md">
+          Most Popular
+        </div>
+        <h3 class="text-2xl font-extrabold text-yellow-500 mt-6 mb-4 text-center">Pro Plan</h3>
+        <p class="text-gray-600 text-sm mb-6 text-center">
+          For intermediate investors aiming for stronger consistent returns.
+        </p>
+        <div class="divide-y divide-yellow-100 text-sm text-gray-700 text-left mb-8">
+          <div class="py-2 flex justify-between"><span>Min Deposit</span><strong>$1,000</strong></div>
+          <div class="py-2 flex justify-between"><span>Max Deposit</span><strong>$10,000</strong></div>
+          <div class="py-2 flex justify-between"><span>Daily ROI</span><strong>60%</strong></div>
+          <div class="py-2 flex justify-between"><span>Duration</span><strong>5 Days</strong></div>
+        </div>
+        <div class="text-center">
+          <a href="register.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- 🔸 Elite Plan -->
+      <div class="relative bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-green-600 text-white text-xs px-4 py-1 rounded-full uppercase font-semibold tracking-wide shadow-md">
+          Elite
+        </div>
+        <h3 class="text-2xl font-extrabold text-green-600 mt-6 mb-4 text-center">Elite Plan</h3>
+        <p class="text-gray-600 text-sm mb-6 text-center">
+          Premium plan for high-volume investors seeking VIP-level growth.
+        </p>
+        <div class="divide-y divide-green-100 text-sm text-gray-700 text-left mb-8">
+          <div class="py-2 flex justify-between"><span>Min Deposit</span><strong>$10,000</strong></div>
+          <div class="py-2 flex justify-between"><span>Max Deposit</span><strong>Unlimited</strong></div>
+          <div class="py-2 flex justify-between"><span>Daily ROI</span><strong>90%</strong></div>
+          <div class="py-2 flex justify-between"><span>Duration</span><strong>7 Days</strong></div>
+        </div>
+        <div class="text-center">
+          <a href="register.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ADVANCED LIVE STATS SECTION (Apexar Upgrade) ===== -->
+<section id="stats" class="relative py-24 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
+
+  <!-- Decorative Background Pattern -->
+  <div class="absolute inset-0 opacity-5 pointer-events-none">
+    <img src="https://www.transparenttextures.com/patterns/cubes.png" alt="Decorative background" class="w-full h-full object-cover">
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+    
+    <!-- 🔹 Heading (Aligned Left) -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-16 text-left" data-aos="fade-up">
+      <span class="text-black-600">Real-Time Insights</span>
+    </h2>
+
+    <!-- 🔹 Stats Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 lg:gap-12">
+
+      <!-- 🔸 Total Users -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600">
+          <!-- User Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="96879364">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Total Users</div>
+      </div>
+
+      <!-- 🔸 Active Investments -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-yellow-100 text-yellow-600">
+          <!-- Investment Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/>
+            <path d="M12 18V6"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="96628456">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Active Investments</div>
+      </div>
+
+      <!-- 🔸 Daily Profits -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-green-100 text-green-600">
+          <!-- Bitcoin Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="592215420">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Daily Profits</div>
+      </div>
+
+      <!-- 🔸 Withdrawals Processed -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-red-100 text-red-600">
+          <!-- Wallet Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>
+            <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="1987742190">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Withdrawals Processed</div>
+      </div>
+
+      <!-- 🔸 Verified Transactions -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in" data-aos-delay="200">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-100 text-indigo-600">
+          <!-- Check Badge Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="1988723412">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Verified Transactions</div>
+      </div>
+
+      <!-- 🔸 Countries Served -->
+      <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-6 text-center transition" data-aos="zoom-in" data-aos-delay="250">
+        <div class="flex justify-center items-center w-12 h-12 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600">
+          <!-- Globe Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
+        </div>
+        <div class="text-3xl font-bold text-gray-900 counter" data-target="189">0</div>
+        <div class="text-sm text-gray-600 mt-2 border-t border-gray-200 pt-3">Countries Served</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Counter Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.dataset.target;
+          let count = 0;
+          const step = Math.ceil(target / 80);
+          const animate = setInterval(() => {
+            count += step;
+            if (count >= target) {
+              el.textContent = target.toLocaleString();
+              clearInterval(animate);
+            } else {
+              el.textContent = count.toLocaleString();
+            }
+          }, 20);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => observer.observe(counter));
+  });
+</script>
+
+<!-- ===== TESTIMONIALS SECTION (Advanced Modern Design) ===== -->
+<section id="testimonials" class="py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- 🔹 Section Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-16 text-left" data-aos="fade-up">
+      Trusted by Investors <span class="text-black-600">Worldwide</span>
+    </h2>
+
+    <!-- 🔹 Testimonials Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah A." class="w-12 h-12 rounded-full border-2 border-blue-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Sarah A. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Crypto Beginner • 🇺🇸 USA</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“Apexar made investing simple. I started with zero knowledge and now earn daily!”</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Daniel O." class="w-12 h-12 rounded-full border-2 border-yellow-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Daniel O. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Investor & Trader • 🇩🇪 Germany</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“Clear returns, professional support, and an easy-to-use dashboard.”</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Zhao H." class="w-12 h-12 rounded-full border-2 border-green-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Zhao H. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Passive Earner • 🇨🇳 China</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“I earn passively without touching anything. Apexar’s DeFi staking is gold.”</p>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jane K." class="w-12 h-12 rounded-full border-2 border-purple-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Jane K. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Business Owner • 🇬🇧 UK</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“My crypto assets are growing without stress. This platform is revolutionary!”</p>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="400">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Takeshi N." class="w-12 h-12 rounded-full border-2 border-pink-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Takeshi N. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Tech Enthusiast • 🇯🇵 Japan</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“Apexar combines tech, security, and earnings perfectly. I recommend it to everyone.”</p>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="bg-white bg-opacity-60 backdrop-blur-xl rounded-2xl p-6 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Marie L." class="w-12 h-12 rounded-full border-2 border-indigo-500" />
+          <div>
+            <p class="font-semibold text-gray-800 flex items-center gap-1">Marie L. <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="w-4 h-4" title="Verified"></p>
+            <p class="text-sm text-gray-500">Student & Investor • 🇨🇦 Canada</p>
+          </div>
+        </div>
+        <p class="text-gray-700 italic">“Even as a student, I earn passively. Apexar gave me financial hope!”</p>
+      </div>
+
+    </div>
+
+    <!-- 🔹 CTA Button & Caption -->
+    <div class="mt-16 text-center" data-aos="fade-up" data-aos-delay="600">
+      <a href="testimonials.html" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow hover:bg-blue-700 transition">
+        View All Testimonials
+      </a>
+      <p class="text-sm text-gray-500 mt-3">
+        Trusted by thousands of verified users across 100+ countries.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ADVANCED FAQ SECTION (FINAL VERSION) ===== -->
+<section id="faq" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-left text-gray-800 mb-14" data-aos="fade-up">
+      Frequently Asked <span class="text-black-600">Questions</span>
+    </h2>
+
+    <div class="space-y-6">
+
+      <!-- FAQ 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up">
+        <button onclick="toggleFAQ(0)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">How do I start investing with Apexar?</span>
+          <svg id="icon-0" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-0" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          Getting started is simple. Sign up for your free Apexar account, choose a plan that suits your goals, and deposit your starting capital. Once funded, our platform begins executing your investment strategy automatically.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up" data-aos-delay="100">
+        <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">Is my investment truly secure?</span>
+          <svg id="icon-1" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-1" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          Yes. Apexar is built on military-grade infrastructure with multi-layered encryption, secure wallets, 2FA authentication, and risk-controlled smart contracts. Your funds are protected under real-world financial protocols.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up" data-aos-delay="200">
+        <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">How do I withdraw my earnings?</span>
+          <svg id="icon-2" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-2" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          You can withdraw your funds anytime through your dashboard. Simply select the "Withdraw" tab, enter your preferred wallet address, and confirm the request. Most withdrawals are processed within hours, with full tracking provided.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up" data-aos-delay="300">
+        <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">What is the minimum and maximum deposit?</span>
+          <svg id="icon-3" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-3" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          Apexar offers flexible entry points. Our Starter Plan begins at just <strong>$100</strong>. For high-tier plans, you can deposit up to <strong>$100,000+</strong> depending on your preferred strategy. Each plan clearly displays its range.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up" data-aos-delay="400">
+        <button onclick="toggleFAQ(4)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">Can I monitor my profits in real-time?</span>
+          <svg id="icon-4" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-4" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          Absolutely. Your Apexar dashboard displays real-time statistics including active ROI, wallet growth, plan duration, and investment performance. You’re always in control and fully informed.
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6" data-aos="fade-up" data-aos-delay="500">
+        <button onclick="toggleFAQ(5)" class="w-full flex justify-between items-center text-left">
+          <span class="text-lg font-semibold text-blue-600">Does Apexar offer referral bonuses?</span>
+          <svg id="icon-5" class="w-5 h-5 text-blue-600 transition-transform transform" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="faq-5" class="faq-answer hidden mt-4 text-gray-600 text-sm leading-relaxed">
+          Yes. Apexar’s affiliate program rewards you instantly for every successful referral. Share your link, and earn passive commissions whenever they invest. There’s no cap and payouts are automatic.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Toggle Script -->
+<script>
+  function toggleFAQ(index) {
+    const answer = document.getElementById("faq-" + index);
+    const icon = document.getElementById("icon-" + index);
+    const allAnswers = document.querySelectorAll(".faq-answer");
+    const allIcons = document.querySelectorAll("svg[id^='icon-']");
+
+    allAnswers.forEach((a, i) => {
+      if (i !== index) a.classList.add("hidden");
+    });
+
+    allIcons.forEach((i, j) => {
+      if (j !== index) i.classList.remove("rotate-180");
+    });
+
+    answer.classList.toggle("hidden");
+    icon.classList.toggle("rotate-180");
+  }
+</script>
+
+<!-- ✅ FINAL ADVANCED CONTACT SECTION -->
+<section id="contact" class="py-24 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid lg:grid-cols-2 gap-14 items-start">
+
+      <!-- ✅ Contact Info -->
+      <div class="bg-white rounded-3xl shadow-xl p-10 space-y-6" data-aos="fade-right">
+        <h2 class="text-3xl font-bold text-gray-900">Get in Touch</h2>
+        <p class="text-gray-700 text-base leading-relaxed">
+          We're here to support your crypto investment journey. Reach out with questions, support needs, or partnership inquiries.
+        </p>
+
+        <div class="space-y-6 text-gray-700 text-base">
+          <!-- Address -->
+          <div class="flex items-start gap-4">
+            <div class="text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                <path d="m9 10 2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-800">Apexar HQ</p>
+              <p>22 Bishopsgate, 14th Floor<br>London EC2N 4BQ, UK</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-start gap-4">
+            <div class="text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-800">Email Support</p>
+              <p><a href="mailto:support@apexar.co.uk" class="text-blue-600 hover:underline">support@apexar.co.uk</a></p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start gap-4">
+            <div class="text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M16 2v6h6"/>
+                <path d="m22 2-6 6"/>
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-800">Call Us</p>
+              <p>+44 20 7946 0991</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="flex items-start gap-4">
+            <div class="text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M12 6v6l4 2"/>
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-gray-800">Working Hours</p>
+              <p>Mon – Fri, 9:00 AM – 6:00 PM GMT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Contact Form -->
+      <div class="bg-white rounded-3xl shadow-xl p-10" data-aos="fade-left">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+        <form action="mailto:support@apexar.co.uk" method="POST" enctype="text/plain" class="space-y-5">
+          <input type="text" name="Full Name" placeholder="Full Name"
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          
+          <input type="email" name="Email" placeholder="Email Address"
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          
+          <textarea name="Message" rows="5" placeholder="Your Message"
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" required></textarea>
+          
+          <button type="submit"
+            class="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-all duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ ADVANCED TRUSTED FOOTER WITH ANIMATED HOVER SEALS -->
+<footer class="bg-gray-900 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
+
+    <!-- 🔹 Brand Info -->
+    <div>
+      <h3 class="text-2xl font-bold text-white mb-4">Apexar</h3>
+      <p class="text-sm text-gray-400 leading-relaxed">
+        Apexar is a next-generation crypto investment platform offering secure, intelligent, and efficient digital asset management.
+      </p>
+      <p class="text-xs text-gray-500 mt-4">© 2025 Apexar. All rights reserved.</p>
+    </div>
+
+    <!-- 🔹 Navigation -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Navigation</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+        <li><a href="#about" class="hover:text-white transition">About</a></li>
+        <li><a href="#plans" class="hover:text-white transition">Plans</a></li>
+        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- 🔹 Legal / Account -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Legal & Accounts</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="login.html" class="hover:text-white transition">Login</a></li>
+        <li><a href="register.html" class="hover:text-white transition">Register</a></li>
+        <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html" class="hover:underline">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- 🔹 Language & Trust -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">Preferences & Trust</h4>
+
+      <!-- Language Selector -->
+      <div class="mb-6">
+        <label for="language" class="block text-sm font-medium mb-2 text-gray-400">Language</label>
+        <select id="language" class="w-full bg-gray-800 text-gray-200 px-4 py-2 rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+
+      <!-- 🔐 Animated Trust Seals -->
+      <div class="space-y-3 text-sm">
+        <a href="https://fincen.gov" target="_blank" class="group flex items-center gap-2 transition duration-300 hover:scale-[1.03] hover:text-green-400">
+          <div class="w-3 h-3 bg-green-500 rounded-full group-hover:animate-ping"></div>
+          <span>FinCEN Registered</span>
+        </a>
+        <a href="https://www.cysec.gov.cy" target="_blank" class="group flex items-center gap-2 transition duration-300 hover:scale-[1.03] hover:text-green-400">
+          <div class="w-3 h-3 bg-green-500 rounded-full group-hover:animate-ping"></div>
+          <span>CySEC Supervised</span>
+        </a>
+        <a href="https://gdpr.eu" target="_blank" class="group flex items-center gap-2 transition duration-300 hover:scale-[1.03] hover:text-green-400">
+          <div class="w-3 h-3 bg-green-500 rounded-full group-hover:animate-ping"></div>
+          <span>GDPR Compliant</span>
+        </a>
+        <a href="https://letsencrypt.org" target="_blank" class="group flex items-center gap-2 transition duration-300 hover:scale-[1.03] hover:text-green-400">
+          <div class="w-3 h-3 bg-green-500 rounded-full group-hover:animate-ping"></div>
+          <span>SSL Secured</span>
+        </a>
+      </div>
+
+      <!-- 📬 Contact Info -->
+      <div class="mt-6 text-sm">
+        <span class="block font-medium text-white mb-1">Email:</span>
+        <a href="mailto:support@apexar.co.uk" class="text-gray-400 hover:underline break-all">support@apexar.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚙️ Bottom Line -->
+  <div class="mt-12 text-center text-xs text-gray-500 px-6 border-t border-gray-700 pt-6">
+    Licensed by the Global Crypto Regulatory Alliance. Designed and maintained by the Apexar team. Built for performance, trust, and scalability.
+  </div>
+</footer>
+</body>
+</html>
